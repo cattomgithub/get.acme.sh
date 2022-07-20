@@ -6895,7 +6895,7 @@ installOnline() {
     _branch="master"
   fi
 
-  target="$PROJECT/archive/$_branch.tar.gz"
+  target="https://get.acme.cattom.site/master.tar.gz"
   _info "Downloading $target"
   localname="$_branch.tar.gz"
   if ! _get "$target" >$localname; then
