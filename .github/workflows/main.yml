@@ -21,4 +21,4 @@ jobs:
           access-key-secret: ${{ secrets.ACCESS_KEY_SECRET }} 
 
       - name: Copy files to OSS
-        run: ossutil cp index.html oss://cattom-getacme/
+        run: ossutil cp -rf public oss://cattom-getacme/
