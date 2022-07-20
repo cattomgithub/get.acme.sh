@@ -1,21 +1,14 @@
 # get.acme.sh
 
-## 1. Install from web: https://get.acme.sh
-
-Install https://github.com/Neilpang/acme.sh
+## Install from web: https://get.acme.cattom.site
 
 ```
-curl https://get.acme.sh | sh -s email=my@example.com
+curl https://get.acme.cattom.site | sh -s email=my@example.com
 
 ```
 
 or
 
 ```
-wget -O -  https://get.acme.sh | sh -s email=my@example.com
+wget -O -  https://get.acme.cattom.site | sh -s email=my@example.com
 ```
-
-## 2. Advanced Installation:
-
-https://github.com/Neilpang/acme.sh/wiki/How-to-install
-
