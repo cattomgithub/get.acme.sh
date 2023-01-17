@@ -1,4 +1,4 @@
-name: Depoly to Alibaba OSS
+name: Deploy to Alibaba OSS
 
 on:
   push:
@@ -21,4 +21,4 @@ jobs:
           access-key-secret: ${{ secrets.ACCESS_KEY_SECRET }} 
 
       - name: Copy files to OSS
-        run: ossutil sync public oss://cattom-getacme/ -f -u --delete
+        run: ossutil sync public oss://cattom-getacme/ --force --update --delete

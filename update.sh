@@ -10,6 +10,8 @@ cd /home/cattom/get.acme.sh/public/ || exit
 
 proxychains wget -N https://github.com/acmesh-official/acme.sh/archive/master.tar.gz
 
+cd /home/cattom/get.acme.sh || exit
+
 git add . && git commit -a -m "Update from source"
 
 proxychains git push
