@@ -1,17 +1,15 @@
 #!/bin/bash
 
-# For local PC! #
+cd /root/get.acme.sh/public/master || exit
 
-cd /home/cattom/get.acme.sh/public/master || exit
+wget -N https://raw.githubusercontent.com/cattomgithub/acme.sh/master/acme.sh
 
-proxychains wget -N https://raw.githubusercontent.com/cattomgithub/acme.sh/master/acme.sh
+cd /root/get.acme.sh/public/ || exit
 
-cd /home/cattom/get.acme.sh/public/ || exit
+wget -N https://github.com/acmesh-official/acme.sh/archive/master.tar.gz
 
-proxychains wget -N https://github.com/acmesh-official/acme.sh/archive/master.tar.gz
-
-cd /home/cattom/get.acme.sh || exit
+cd /root/get.acme.sh || exit
 
 git add . && git commit -a -m "Update from source"
 
-proxychains git push
+git push
